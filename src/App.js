@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import './App.css';
-import Search from './components/Search';
+import Search from './components/Search/Search';
 import Header from './components/Header/Header';
 import Results from './components/Results/Results'
 
@@ -82,7 +82,7 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Header />
-          <Route path="/search" exact render={(props) => (
+          <Route path="/" exact render={(props) => (
             <div>
               <Search getQuestions={this.getQuestions} {...props} />
             </div>

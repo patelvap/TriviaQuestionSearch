@@ -1,0 +1,83 @@
+.outerContainer {
+    margin: 0px 40px;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.searchDiv {
+    height: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.search {
+    position: relative;
+    margin: 0px 5px;
+    border: none;
+    border-left: 7px solid rgb(240, 240, 240);
+    border-right: 7px solid rgb(240, 240, 240);
+    background: rgb(240, 240, 240);
+    padding: 6px 5px;
+    z-index: 2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.search:focus {
+    outline: none;
+    border-left: 7px solid #061f4a;
+}
+.search:focus + label {
+    top: -50px;
+    font-size: 14px;
+}
+.search:focus::-webkit-input-placeholder { color:transparent; }
+.search:focus:-moz-placeholder { color:transparent; }
+.search:focus::-moz-placeholder { color:transparent; } 
+.search:focus:-ms-input-placeholder { color:transparent; } 
+
+label {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 173px;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+    position: relative;
+    color: rgb(55, 66, 70);
+    z-index: 1;
+    top: -20px;
+    transition: all 0.1s linear;
+    font-size: 16px;
+}
+
+.submitButton {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 29px;
+    width: 192px;
+    border: 1px solid #061f4a;
+    background-color: #061f4a;
+    padding: 5px;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+}.submitButton:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    border: 1px solid aqua;
+}
+.submitButton:active {
+    background-color: rgb(240, 240, 240);
+    color: rgb(55, 66, 70);
+    outline: none;
+}
+.submitButton:focus {
+    outline: none;
+}
