@@ -15,7 +15,7 @@ export default class Card extends Component {
 
     render () {
         return (
-            <div className="Card" onClick={() => this.props.showInfo(this.props.value, this.props.category, this.props.question, this.props.answer, this.props.airDate)}>
+            <div className="Card">
                 <div className="detail">
                     <table class="table">
                         <tbody>
