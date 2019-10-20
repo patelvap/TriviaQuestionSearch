@@ -85,6 +85,7 @@ class App extends Component {
           <Route path="/" exact render={(props) => (
             <div>
               <Search getQuestions={this.getQuestions} {...props} />
+              <Results result={this.state.results} />
             </div>
           )} />
         </div>
