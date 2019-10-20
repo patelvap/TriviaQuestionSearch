@@ -1,0 +1,19 @@
+.htext {
+    color: #3393FF;
+}
+
+.header {
+    background-color: aliceblue;
+}
+
+.logo {
+    flex: 1 1 0;
+    margin: 3px;
+    color: #061f4a;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    padding-left: 30px;
+}

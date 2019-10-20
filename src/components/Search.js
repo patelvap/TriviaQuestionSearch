@@ -4,7 +4,6 @@ class Search extends Component {
     constructor(props) {
         super(props);
         this.state ={
-            q: '',
             value: '',
             category: '',
             minDate: '',
@@ -50,3 +49,5 @@ class Search extends Component {
         )
     }
 }
+
+export default Search;
