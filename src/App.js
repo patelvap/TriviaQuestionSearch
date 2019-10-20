@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import './App.css';
 import Search from './components/Search';
 import Header from './components/Header/Header';
+import Results from './components/Results/Results'
 
 class App extends Component {
   constructor(){
@@ -17,18 +18,18 @@ class App extends Component {
     }
   }
 
-  getQuestions = (val, category, minDate, maxDate) => {
+  getQuestions = (value, category, minDate, maxDate) => {
     let queryString = '?';
     let results = [];
 
     //check to see if parameters are empty or undefined
-    const checkVal = (val === undefined || val === '');
+    const checkVal = (value === undefined || value === '');
     const checkCategory = (category === undefined || category === '');
     const checkMinDate = (minDate === undefined || minDate === '');
     const checkMaxDate = (maxDate === undefined || maxDate === '');
 
     //just entered search page so display none
-    if (val === undefined && category === undefined && minDate === undefined && maxDate === undefined){
+    if (value === undefined && category === undefined && minDate === undefined && maxDate === undefined){
       queryString = '';
       results = 'none';
     }
@@ -39,7 +40,7 @@ class App extends Component {
     else { // build query string
       results = [];
       if (!checkVal){
-        queryString += 'value=' + val + '&';
+        queryString += 'value=' + value + '&';
       }
       if (!checkCategory){
         queryString += 'category=' + category + '&';
@@ -67,7 +68,7 @@ class App extends Component {
       })
       .catch(() => {
         this.setState({
-          results: data,
+          results: 'none',
           value: value,
           category: category,
           minDate: minDate,
@@ -81,6 +82,11 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Header />
+          <Route path="/search" exact render={(props) => (
+            <div>
+              <Search getQuestions={this.getQuestions} {...props} />
+            </div>
+          )} />
         </div>
       </Router>
     )
