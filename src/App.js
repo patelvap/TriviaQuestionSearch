@@ -46,10 +46,10 @@ class App extends Component {
         queryString += 'category=' + category + '&';
       }
       if (!checkMinDate) {
-        queryString += 'min_date=' + new Date(minDate) + '&';
+        queryString += 'min_date=' + Date.parse(minDate) + '&';
       }
       if (!checkMaxDate) {
-        queryString += 'max_date=' + new Date(maxDate);
+        queryString += 'max_date=' + (new Date(maxDate)) + '&';
       }
     }
     
