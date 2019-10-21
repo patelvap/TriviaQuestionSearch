@@ -13,6 +13,7 @@ export default class Search extends Component {
     }
 
     updateSearch = (e) => {
+        e.preventDefault();
         this.setState({
             [e.target.name]: e.target.value
         });
@@ -35,8 +36,8 @@ export default class Search extends Component {
                             <label htmlFor="value">Value of Question</label>
                         </div>
                         <div className="searchDiv">
-                            <input className="search" name="category" type="text" placeholder="Category" onChange={this.updateSearch}></input>
-                            <label htmlFor="category">Category</label>
+                            <input className="search" name="category" type="text" placeholder="Category ID" onChange={this.updateSearch}></input>
+                            <label htmlFor="category">Category ID</label>
                         </div>
                         <div className="searchDiv">
                             <input className="search" name="minDate" type="text" placeholder="Start Date" onChange={this.updateSearch}></input>

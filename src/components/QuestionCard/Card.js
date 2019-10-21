@@ -12,28 +12,28 @@ export default class Card extends Component {
             airDate: ''
         }
     }
-
+    
     render () {
         return (
             <div className="card">
                 <div className="detail">
                     <table class="table">
-                        <tbody>
+                        <tbody class="tableBody">
                             <tr>
                                 <td><strong>Difficulty</strong></td>
-                                <td>{this.state.value}</td>
+                                <td>{this.props.value}</td>
                             </tr>
                             <tr>
                                 <td><strong>Category</strong></td>
-                                <td>{this.state.category}</td>
+                                <td>{this.props.category}</td>
                             </tr>
                             <tr>
                                 <td><strong>Question</strong></td>
-                                <td>{this.state.question}</td>
+                                <td>{this.props.question}</td>
                             </tr>
                             <tr>
                                 <td><strong>Answer</strong></td>
-                                <td>{this.state.answer}</td>
+                                <td>{this.props.answer}</td>
                             </tr>
                             <tr>
                                 <td><strong>Air Date</strong></td>

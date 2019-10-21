@@ -17,9 +17,10 @@ const Results = ({ results }) => {
 
     return (
         <div className="resultsDiv">
-            {results.map((result, i) => {
+            {results.map((result) => {
+                console.log(result.category.title);
                 return (
-                    <Card value={result.value} category={result.category.title} question={result.question} answer={result.answer} airDate={result.airDate} />
+                    <Card value={result.value} category={result.category.title} question={result.question} answer={result.answer} airDate={(result.airDate+"").toString()} />
                 );
             })}
         </div>
