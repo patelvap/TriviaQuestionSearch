@@ -15,7 +15,7 @@ export default class Card extends Component {
 
     render () {
         return (
-            <div className="Card">
+            <div className="card">
                 <div className="detail">
                     <table class="table">
                         <tbody>

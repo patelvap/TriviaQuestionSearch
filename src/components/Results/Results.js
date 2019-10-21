@@ -14,12 +14,12 @@ const Results = ({ results }) => {
             </div>
         );
     }
-    console.log(results);
+
     return (
         <div className="resultsDiv">
             {results.map((result, i) => {
                 return (
-                    <Card key={result.href} value={result.value} category={result.category.title} question={result.question} answer={result.answer} airDate={result.airDate} />
+                    <Card value={result.value} category={result.category.title} question={result.question} answer={result.answer} airDate={result.airDate} />
                 );
             })}
         </div>
