@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/TriviaQuestionSearch/static/css/main.1bd27466.chunk.css",
-    "main.js": "/TriviaQuestionSearch/static/js/main.0fb46cd2.chunk.js",
-    "main.js.map": "/TriviaQuestionSearch/static/js/main.0fb46cd2.chunk.js.map",
+    "main.js": "/TriviaQuestionSearch/static/js/main.eb0fcf04.chunk.js",
+    "main.js.map": "/TriviaQuestionSearch/static/js/main.eb0fcf04.chunk.js.map",
     "runtime-main.js": "/TriviaQuestionSearch/static/js/runtime-main.eb341432.js",
     "runtime-main.js.map": "/TriviaQuestionSearch/static/js/runtime-main.eb341432.js.map",
-    "static/js/2.82a63652.chunk.js": "/TriviaQuestionSearch/static/js/2.82a63652.chunk.js",
-    "static/js/2.82a63652.chunk.js.map": "/TriviaQuestionSearch/static/js/2.82a63652.chunk.js.map",
+    "static/js/2.70cc1bc3.chunk.js": "/TriviaQuestionSearch/static/js/2.70cc1bc3.chunk.js",
+    "static/js/2.70cc1bc3.chunk.js.map": "/TriviaQuestionSearch/static/js/2.70cc1bc3.chunk.js.map",
     "index.html": "/TriviaQuestionSearch/index.html",
-    "precache-manifest.abbb3777b0fcad38a57069edb7d8875e.js": "/TriviaQuestionSearch/precache-manifest.abbb3777b0fcad38a57069edb7d8875e.js",
+    "precache-manifest.d16f8a42f444325b054397084f6f0a92.js": "/TriviaQuestionSearch/precache-manifest.d16f8a42f444325b054397084f6f0a92.js",
     "service-worker.js": "/TriviaQuestionSearch/service-worker.js",
     "static/css/main.1bd27466.chunk.css.map": "/TriviaQuestionSearch/static/css/main.1bd27466.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.eb341432.js",
-    "static/js/2.82a63652.chunk.js",
+    "static/js/2.70cc1bc3.chunk.js",
     "static/css/main.1bd27466.chunk.css",
-    "static/js/main.0fb46cd2.chunk.js"
+    "static/js/main.eb0fcf04.chunk.js"
   ]
 }
