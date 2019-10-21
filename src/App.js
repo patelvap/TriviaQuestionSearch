@@ -53,7 +53,7 @@ class App extends Component {
       }
     }
     
-    fetch(`http://jservice.io/api/clues${queryString}`)
+    fetch(`https://jservice.io/api/clues${queryString}`)
       .then(response => response.json())
       .then(data => {
         this.setState({
