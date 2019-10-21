@@ -21,7 +21,7 @@ export default class Search extends Component {
 
     submit = (e) => {
         e.preventDefault();
-        this.props.history.push(`value=${this.state.value}&category=${this.state.category}&min_date=${this.state.minDate}&max_date=${this.state.maxDate}`);
+        this.props.history.push(`value=${this.state.value}&caggttegory=${this.state.category}&min_date=${this.state.minDate}&max_date=${this.state.maxDate}`);
         const { value, category, minDate, maxDate } = this.state;
         this.props.getQuestions(value, category, minDate, maxDate);
     }

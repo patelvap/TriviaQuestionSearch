@@ -82,7 +82,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route path="/" exact strict component={Homepage} />
-          <Route path="/search" exact render={(props) => (
+          <Route path="/search/" strict render={(props) => (
             <div>
               <Search getQuestions={this.getQuestions} {...props} />
               <Results results={this.state.results} />
