@@ -15,7 +15,7 @@ const Homepage = () => {
                     a question was shown based on the air date. 
                 </p>
                 <p>Thanks for coming to the site! Click the button below to be taken to start searching!</p>
-                <div className="button"><Link to="/search/" style={{ color: '#3393FF', fontSize: 20 }}> Enter </Link></div>
+                <div className="button"><Link to="/search" style={{ color: '#3393FF', fontSize: 20 }}> Enter </Link></div>
             </div>
         </div>
     )

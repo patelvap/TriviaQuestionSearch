@@ -21,7 +21,6 @@ class App extends Component {
 
   getQuestions = (value, category, minDate, maxDate) => {
     let queryString = '?';
-    let results = [];
 
     //check to see if parameters are empty or undefined
     const checkVal = (value === undefined || value === '');
@@ -29,17 +28,14 @@ class App extends Component {
     const checkMinDate = (minDate === undefined || minDate === '');
     const checkMaxDate = (maxDate === undefined || maxDate === '');
 
-    //just entered search page so display none
+    //just entered search page so display nothing
     if (value === undefined && category === undefined && minDate === undefined && maxDate === undefined){
       queryString = '';
-      results = 'none';
     }
     else if (checkVal && checkCategory && checkMinDate && checkMaxDate) {
       queryString = '';
-      results = 'none';
     }
     else { // build query string
-      results = [];
       if (!checkVal){
         queryString += 'value=' + value + '&';
       }
@@ -82,7 +78,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route path="/" exact strict component={Homepage} />
-          <Route path="/search/" strict render={(props) => (
+          <Route path="/search" strict render={(props) => (
             <div>
               <Search getQuestions={this.getQuestions} {...props} />
               <Results results={this.state.results} />
