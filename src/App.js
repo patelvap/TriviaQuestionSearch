@@ -4,6 +4,7 @@ import './App.css';
 import Search from './components/Search/Search';
 import Header from './components/Header/Header';
 import Results from './components/Results/Results'
+import Homepage from './components/Homepage/Homepage'
 
 class App extends Component {
   constructor(){
@@ -80,7 +81,8 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Header />
-          <Route path="/" render={(props) => (
+          <Route path="/" exact strict component={Homepage} />
+          <Route path="/search" exact render={(props) => (
             <div>
               <Search getQuestions={this.getQuestions} {...props} />
               <Results results={this.state.results} />
