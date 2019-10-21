@@ -40,12 +40,12 @@ export default class Search extends Component {
                             <label htmlFor="category">Category ID</label>
                         </div>
                         <div className="searchDiv">
-                            <input className="search" name="minDate" type="text" placeholder="Start Date" onChange={this.updateSearch}></input>
-                            <label htmlFor="minDate">Start Date</label>
+                            <input className="search" name="minDate" type="text" placeholder="Earliest Date" onChange={this.updateSearch}></input>
+                            <label htmlFor="minDate">Earliest Date</label>
                         </div>
                         <div className="searchDiv">
-                            <input className="search" name="maxDate" type="text" placeholder="End Date" onChange={this.updateSearch}></input>
-                            <label htmlFor="maxDate">End Date</label>
+                            <input className="search" name="maxDate" type="text" placeholder="Latest Date" onChange={this.updateSearch}></input>
+                            <label htmlFor="maxDate">Latest Date</label>
                         </div>
                     </div>
                     <input type="submit" className="submitButton" value="Search"/>
