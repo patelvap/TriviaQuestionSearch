@@ -46,18 +46,16 @@ class App extends Component {
         queryString += 'category=' + category + '&';
       }
       if (!checkMinDate) {
-        queryString += 'min_date=' + new Date(minDate.val().toUTCstring()) + '&';
+        queryString += 'min_date=' + new Date(minDate.toUTCstring()) + '&';
       }
       if (!checkMaxDate) {
-        queryString += 'max_date=' + new Date(maxDate.val().toUTCstring()) + '&';
+        queryString += 'max_date=' + new Date(maxDate.toUTCstring());
       }
     }
-
+    
     fetch(`http://jservice.io/api/clues${queryString}`)
       .then(response => response.json())
       .then(data => {
-        //console.log(data);
-
         this.setState({
           results: data,
           value: value,
@@ -82,10 +80,10 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Header />
-          <Route path="/" exact render={(props) => (
+          <Route path="/" render={(props) => (
             <div>
               <Search getQuestions={this.getQuestions} {...props} />
-              <Results result={this.state.results} />
+              <Results results={this.state.results} />
             </div>
           )} />
         </div>

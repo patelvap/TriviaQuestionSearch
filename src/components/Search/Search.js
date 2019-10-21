@@ -27,7 +27,7 @@ export default class Search extends Component {
 
     render() {
         return (
-            <div class="outerContainer">
+            <div className="outerContainer">
                 <form onSubmit={this.submit}>
                     <div className="inputs">
                         <div className="searchDiv">
