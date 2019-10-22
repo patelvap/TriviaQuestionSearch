@@ -51,7 +51,8 @@ class App extends Component {
       }
     }
     
-    fetch(`http://jservice.io/api/clues${queryString}`)
+    //passing request through proxy to prevent cross-origin request blocked errors
+    fetch(`https://cors-anywhere.herokuapp.com/http://jservice.io/api/clues${queryString}`)
       .then(response => response.json())
       .then(data => {
         this.setState({
