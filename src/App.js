@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import './App.css';
 import Search from './components/Search/Search';
 import Header from './components/Header/Header';
-import Results from './components/Results/Results'
-import Homepage from './components/Homepage/Homepage'
+import Results from './components/Results/Results';
+import Homepage from './components/Homepage/Homepage';
+const fetch = require('node-fetch');
 
 class App extends Component {
   constructor(){
